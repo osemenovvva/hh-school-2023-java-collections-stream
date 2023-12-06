@@ -48,7 +48,7 @@ public class Task8 {
   // Можем создать словарь с помощью стримов
   public Map<Integer, String> getPersonNames(Collection<Person> persons) {
     return persons.stream()
-            .collect(Collectors.toMap(Person::getId, this::convertPersonToString));
+            .collect(Collectors.toMap(Person::getId, this::convertPersonToString, (p1, p2) -> p1));
   }
 
   // есть ли совпадающие в двух коллекциях персоны?
