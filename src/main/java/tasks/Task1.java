@@ -36,6 +36,6 @@ public class Task1 {
             .map(personsMap::get)
             .collect(Collectors.toList());
 
-    // Общая ассимптотика работы - O(n)
+    // Общая асимптотика работы - O(n)
   }
 }
